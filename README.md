@@ -5,7 +5,7 @@
 ### Learn AI engineering by building one real product from first principles to production.
 
 [![Status](https://img.shields.io/badge/status-planning-6c63ff?style=for-the-badge)](#-current-status)
-[![Roadmap](https://img.shields.io/badge/roadmap-32_weeks-0ea5e9?style=for-the-badge)](ROADMAP.md)
+[![Roadmap](https://img.shields.io/badge/roadmap-24--32_weeks-0ea5e9?style=for-the-badge)](ROADMAP.md)
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-TBD-lightgrey?style=for-the-badge)](#)
 
@@ -106,7 +106,7 @@ Personal AI Lab
 
 **Phase:** Planning  
 **Current checkpoint:** CP00 — Engineering Foundation  
-**Target:** v1.0 in approximately **32 weeks / 8 months** at a sustainable student pace.
+**Target:** v1.0 in approximately **24–32 weeks (~6–8 months)**. The 24-week path is the target; 32 weeks is the buffer for university workload, deeper study and difficult checkpoints.
 
 The detailed learning path, resources, deliverables and definition of done live in **[ROADMAP.md](ROADMAP.md)**.
 
