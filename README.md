@@ -1,221 +1,175 @@
-<div align="center">
+# Personal AI Lab
 
-# 🧠 Personal AI Lab
+> A project I’m building to learn how modern language-model systems work from the ground up — by turning each topic I learn into part of one real product.
 
-### Learn AI engineering by building one real product from first principles to production.
-
-[![Status](https://img.shields.io/badge/status-planning-6c63ff?style=for-the-badge)](#-current-status)
-[![Roadmap](https://img.shields.io/badge/roadmap-24--32_weeks-0ea5e9?style=for-the-badge)](ROADMAP.md)
-[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-TBD-lightgrey?style=for-the-badge)](#)
-
-**Local & API LLMs · Turkish Evaluation · Fine-tuning · RAG · Agents · FastAPI · PostgreSQL · Docker · CI/CD**
-
-</div>
+[Roadmap](ROADMAP.md) · Current stage: **Planning / CP00** · Target: **24–32 weeks**
 
 ---
 
-## ✨ What is Personal AI Lab?
+## About the project
 
-**Personal AI Lab** is a long-term learning-and-building project.
+I did not want to learn Python, APIs, machine learning, fine-tuning, RAG, agents and deployment as disconnected subjects.
 
-The goal is not to finish courses first and build something later. Every concept is learned **when the product needs it**, then immediately implemented, tested, documented and committed.
+So I decided to build one project that grows with me.
 
-By v1.0, the platform is intended to support:
+Personal AI Lab starts small: a command-line program that can send a prompt to a model and save the result. From there, it gradually becomes a platform where I can compare models, run local models, build my own Turkish evaluation set, fine-tune smaller models, work with personal documents, add tools and workflows, and finally deploy the whole system.
 
-- 🤖 API and local LLM providers
-- ⚔️ Side-by-side model comparison
-- 🇹🇷 A custom Turkish AI benchmark
-- 🧪 Dataset and experiment tracking
-- 🔧 LoRA / QLoRA fine-tuning workflows
-- 📚 RAG over personal documents
-- 🛠️ Tool-calling and agent workflows
-- 📊 Evaluation, latency and cost observability
-- 🌐 FastAPI backend + database
-- 🐳 Dockerized deployment
-- ⚙️ CI/CD and production checks
-- 🧑‍💻 A personal assistant built on top of the lab
+The point is not only to reach the final product.
+
+I want the repository to keep a record of **how I got there**.
 
 ---
 
-## 🎯 The Learning Rule
+## How I’m learning
 
-> **Learn → Build → Test → Measure → Document → Commit**
-
-A checkpoint is **not complete** just because I watched a lesson or wrote code.
-
-Each checkpoint must leave evidence in this repository:
-
-- working code,
-- tests or measurable output,
-- a short technical write-up,
-- meaningful commits,
-- and a clear connection to the final product.
-
----
-
-## 🗺️ Product Map
+The basic rule for the project is:
 
 ```text
-Personal AI Lab
-│
-├── Model Arena
-│   ├── API models
-│   └── Local models
-│
-├── Dataset Studio
-│   ├── clean
-│   ├── inspect
-│   └── split
-│
-├── Fine-tuning Studio
-│   ├── LoRA
-│   └── QLoRA
-│
-├── Turkish AI Benchmark
-│   ├── quality
-│   ├── instruction following
-│   ├── hallucination
-│   ├── latency
-│   └── cost
-│
-├── Knowledge Base
-│   ├── embeddings
-│   ├── vector search
-│   └── RAG
-│
-├── Agent Studio
-│   ├── tools
-│   ├── workflows
-│   └── multi-agent experiments
-│
-├── Personal Assistant
-│
-└── Production Layer
-    ├── FastAPI
-    ├── PostgreSQL
-    ├── tests
-    ├── Docker
-    ├── CI/CD
-    └── monitoring
+Learn → Build → Test → Measure → Document → Commit
+```
+
+I try to learn a concept when the project actually needs it.
+
+For example:
+
+- I learn Python by building the first CLI and benchmark code.
+- I learn APIs while adding model providers.
+- I learn evaluation while building a Turkish benchmark.
+- I learn PyTorch and ML concepts before fine-tuning.
+- I learn databases when experiment history needs persistence.
+- I learn RAG when the assistant needs to work with documents.
+- I learn Docker when the application needs to run outside my laptop.
+
+A checkpoint is complete only when I can explain what I built and show that it works.
+
+---
+
+## What I want to build
+
+The final version should let me do things like:
+
+- run both local and API-based language models,
+- compare the same prompt across models,
+- measure latency, failures and cost where available,
+- evaluate models with a custom Turkish benchmark,
+- prepare datasets and run LoRA / QLoRA experiments,
+- compare base and fine-tuned models,
+- search and answer from personal documents,
+- give models tools and controlled workflows,
+- keep experiment history in a database,
+- expose the system through an API,
+- and run it as a containerized production application.
+
+The personal assistant will eventually sit on top of these pieces rather than being the first thing I build.
+
+---
+
+## Project evolution
+
+```text
+CLI
+ │
+ ├── Model providers
+ │     ├── API models
+ │     └── Local models
+ │
+ ├── Benchmarking & evaluation
+ │     └── Turkish benchmark
+ │
+ ├── Machine learning
+ │     └── Fine-tuning experiments
+ │
+ ├── Backend & database
+ │
+ ├── Personal knowledge / RAG
+ │
+ ├── Tools & agent workflows
+ │
+ └── Docker, CI/CD and production
 ```
 
 ---
 
-## 🧭 Current Status
+## Roadmap
 
-**Phase:** Planning  
-**Current checkpoint:** CP00 — Engineering Foundation  
-**Target:** v1.0 in approximately **24–32 weeks (~6–8 months)**. The 24-week path is the target; 32 weeks is the buffer for university workload, deeper study and difficult checkpoints.
+The working target is **24 weeks**, with room to extend the plan to **32 weeks** when university workload or harder checkpoints require more time.
 
-The detailed learning path, resources, deliverables and definition of done live in **[ROADMAP.md](ROADMAP.md)**.
+The roadmap is checkpoint-based rather than calendar-based. I do not move forward just because a week ended.
 
----
-
-## 📦 Planned Repository Structure
-
-```text
-Personal-AI-Lab/
-│
-├── README.md
-├── ROADMAP.md
-├── LEARNING.md
-├── CHANGELOG.md
-│
-├── src/
-│   └── personal_ai_lab/
-├── tests/
-├── benchmarks/
-│   ├── datasets/
-│   ├── configs/
-│   └── results/
-├── experiments/
-├── docs/
-│   ├── checkpoints/
-│   ├── learning-log/
-│   └── decisions/
-├── .github/
-│   └── workflows/
-├── .env.example
-├── .gitignore
-└── pyproject.toml
-```
-
-Folders will be created **when they become necessary**, not as empty decoration.
-
----
-
-## 🧪 Checkpoint Philosophy
-
-Every checkpoint answers five questions:
-
-1. **What do I need to learn?**
-2. **Why does the product need it?**
-3. **What exactly will I build with it?**
-4. **How will I prove that it works?**
-5. **What evidence will be committed to GitHub?**
-
-Detailed checkpoint reports will live under:
-
-```text
-docs/checkpoints/
-```
-
----
-
-## 🧑‍🏫 AI-assisted Learning Policy
-
-AI tools are used as **teachers, reviewers and pair programmers**, not as a replacement for understanding.
-
-A simple rule:
-
-> If I cannot explain the code, I do not merge it into the main branch.
-
----
-
-## 🔐 Security Rule
-
-Secrets never belong in Git history.
-
-The repository may contain:
-
-- `.env.example`
-- public benchmark datasets
-- configs
-- metrics
-- reproducible experiment metadata
-
-It must **never** contain:
-
-- API keys
-- passwords
-- private personal data
-- production credentials
-- large model weights
-
----
-
-## 🏁 Planned Milestones
-
-| Version | Milestone |
+| Milestone | Outcome |
 |---|---|
-| `v0.1` | Python + CLI foundation |
+| `v0.1` | Python + first CLI |
 | `v0.2` | Multi-model benchmark engine |
-| `v0.3` | Local LLM support |
-| `v0.4` | Turkish benchmark |
-| `v0.5` | ML foundations + LoRA fine-tuning |
+| `v0.3` | Local model support |
+| `v0.4` | Turkish evaluation benchmark |
+| `v0.5` | ML foundations + first fine-tuning experiment |
 | `v0.6` | FastAPI + PostgreSQL backend |
-| `v0.7` | RAG knowledge system |
-| `v0.8` | Tool calling + agents |
-| `v0.9` | Docker + CI/CD + observability |
-| `v1.0` | Production-ready Personal AI Lab |
+| `v0.7` | Personal knowledge / RAG |
+| `v0.8` | Tools and agent workflows |
+| `v0.9` | Docker, testing, CI/CD and observability |
+| `v1.0` | Production version of Personal AI Lab |
+
+The detailed plan, learning topics, resources and completion criteria are in **[ROADMAP.md](ROADMAP.md)**.
 
 ---
 
-<div align="center">
+## Repository philosophy
 
-### 🚧 Built in public, checkpoint by checkpoint.
+This repository is also my learning log.
 
-*The Git history is part of the portfolio.*
+I want the Git history to show:
 
-</div>
+- what I learned,
+- what I built with it,
+- what failed,
+- what I changed,
+- what I measured,
+- and why I made certain technical decisions.
+
+Over time the repository will include:
+
+```text
+src/                 application code
+tests/               automated tests
+benchmarks/          datasets, configs and results
+experiments/         reproducible experiments
+docs/checkpoints/    checkpoint write-ups
+docs/learning-log/   learning notes
+docs/decisions/      technical decisions
+```
+
+I will add structure when it becomes useful rather than filling the repository with empty folders on day one.
+
+---
+
+## A rule for using coding assistants
+
+I use coding assistants as teachers, reviewers and pair programmers.
+
+My rule is simple:
+
+> **If I cannot explain the code, I do not merge it.**
+
+That means I would rather ask for an explanation, hint or code review first than generate an entire feature I do not understand.
+
+---
+
+## Security
+
+Secrets, personal data and large model files do not belong in this repository.
+
+API keys and credentials will stay in local environment variables or deployment secrets. The repository will only contain examples such as `.env.example`.
+
+---
+
+## Current status
+
+**Checkpoint:** CP00 — Engineering Foundation  
+**Status:** Planning  
+**Next:** repository setup, Git workflow, Python environment and the first small program
+
+---
+
+This project will change a lot as I learn.
+
+That is part of the point.
